@@ -1,0 +1,117 @@
+# ------------------------------------------------------------------
+# 1. Environment variables & secrets
+# ------------------------------------------------------------------
+.env                  # <-- MOST IMPORTANT: hides your .env with API keys
+.env.local
+.env.*                # any .env.something
+*.env                 # any file ending in .env
+.envrc
+
+# ------------------------------------------------------------------
+# 2. Python virtual environments
+# ------------------------------------------------------------------
+env/
+venv/
+.venv/
+ENV/
+env*
+venv*
+.venv*
+
+# ------------------------------------------------------------------
+# 3. Python cache & compiled files
+# ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ------------------------------------------------------------------
+# 4. Jupyter / IPython
+# ------------------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ------------------------------------------------------------------
+# 5. IDE / Editor files
+# ------------------------------------------------------------------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.tmproj
+*.esproj
+*.sublime-project
+*.sublime-workspace
+
+# ------------------------------------------------------------------
+# 6. OS generated files
+# ------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ------------------------------------------------------------------
+# 7. Logs & temp files
+# ------------------------------------------------------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ------------------------------------------------------------------
+# 8. LangChain / LangGraph / ML extras
+# ------------------------------------------------------------------
+*.cache
+*.tmp
+*.bak
+*.pickle
+*.pkl
+*.h5
+*.hdf5
+*.pth
+*.pt
+*.ckpt
+chroma/
+vector_store/
+faiss_index/
+*.faiss
+*.db
+
+# ------------------------------------------------------------------
+# 9. Optional: hide large data files
+# ------------------------------------------------------------------
+data/
+datasets/
+*.csv
+*.jsonl
+*.parquet
+*.zip
+*.tar.gz
